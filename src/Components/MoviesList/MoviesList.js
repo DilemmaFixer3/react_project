@@ -10,8 +10,8 @@ import {movieActions} from "../../redux";
 
 const MoviesList = () => {
 
-    const {results} = useSelector(state => state.movies);
-    // const {results} = movies;
+    const {movies} = useSelector(state => state.movies);
+    const {results} = movies;
 
     const dispatch = useDispatch();
 
@@ -21,7 +21,7 @@ const MoviesList = () => {
 
     return (
         <div>
-            {results.map(movie=><MoviesListCard key={movie.id} movie={movie}/>)}
+            {results&&results.map(movie=><MoviesListCard key={movie.id} movie={movie}/>)}
         </div>
     );
 };

@@ -11,10 +11,10 @@ const getAll = createAsyncThunk(
     'movieSlice/getAll',
     async (_, {rejectWithValue})=>{
         try {
-            const {results} = await movieService.getAll();
-            return results;
+            const {data} = await movieService.getAll();
+            return data;
         }catch (e) {
-            return rejectWithValue(e.response.results)
+            return rejectWithValue(e.response.data)
         }
 
     }
