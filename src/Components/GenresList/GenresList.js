@@ -15,8 +15,8 @@ const GenresList = () => {
 
     return (
         <div>
-            {genres&&genres.map(genre=><GenreInfo key={genre.id} genre={genre}/>)}
-        </div>
+             {/*{genres&&genres.map(genre=><GenreInfo key={genre.id} genre={genre}/>)}*/}
+         </div>
     );
 };
 
