@@ -8,6 +8,8 @@ import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 import {useEffect} from "react";
 import {movieActions} from "../../redux";
 
+import css from './MoviesList.module.css';
+
 const MoviesList = () => {
 
     const {movies} = useSelector(state => state.movies);
@@ -20,7 +22,7 @@ const MoviesList = () => {
     }, []);
 
     return (
-        <div>
+        <div className={css.MoviesList}>
             {results&&results.map(movie=><MoviesListCard key={movie.id} movie={movie}/>)}
         </div>
     );

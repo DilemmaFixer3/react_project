@@ -6,16 +6,20 @@ import {GenreInfo} from "../GenreInfo/GenreInfo";
 const GenresList = () => {
 
     const {genres} = useSelector(state => state.genres);
+    console.log(genres);
 
     const dispatch = useDispatch();
 
     useEffect(()=>{
         dispatch(genreActions.getAll());
     }, []);
+    console.log(genres);
 
     return (
         <div>
-             {/*{genres&&genres.map(genre=><GenreInfo key={genre.id} genre={genre}/>)}*/}
+            {/*{*/}
+            {/*    genres&&genres.map(genre=>{<GenreInfo genre={genre} key={genre.id}/>})*/}
+            {/*}*/}
          </div>
     );
 };

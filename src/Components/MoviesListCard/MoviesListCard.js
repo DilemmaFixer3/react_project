@@ -9,7 +9,7 @@ const MoviesListCard = ({movie}) => {
 
     return (
         <div>
-            <hr/>
+
             <MovieInfo key={movie.id} movie={movie}/>
             <hr/>
         </div>
