@@ -1,0 +1,13 @@
+.MoviesListCard{
+    width: 100%;
+    display: flex;
+    background-color: #d7ff00;
+    margin: 15px;
+    height: max-content;
+}
+
+.MoviesListCard a{
+    color: #010101;
+    text-decoration: none;
+}
+

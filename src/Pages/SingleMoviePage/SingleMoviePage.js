@@ -1,7 +1,6 @@
-// todo сторінка з повною інформацією про даний фільм. Відкривається після того, як клікаєш на компоненту конкретного фільму.
-
 import {useLocation, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
+
 import {movieService} from "../../services";
 import {MovieDetails} from "../../Components";
 
@@ -21,7 +20,6 @@ const SingleMoviePage = () => {
 
     return (
         <div>
-            SingleMoviePage
             {movie&&<MovieDetails movie={movie} key={id}/>}
         </div>
     );

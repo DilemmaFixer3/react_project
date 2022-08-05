@@ -1,0 +1,17 @@
+.butt{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.butt button{
+    margin: 7px;
+}
+
+.LightTheme{
+    background-color: #838486;
+}
+
+.DarkTheme{
+    background-color: #212121;
+}

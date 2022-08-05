@@ -1,5 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
+
 import {genreActions} from "../../redux";
 import {GenreInfo} from "../GenreInfo/GenreInfo";
 
@@ -12,14 +13,17 @@ const GenresList = () => {
 
     useEffect(()=>{
         dispatch(genreActions.getAll());
-    }, []);
+    }, [dispatch]);
     console.log(genres);
 
     return (
         <div>
-            {/*{*/}
-            {/*    genres&&genres.map(genre=>{<GenreInfo genre={genre} key={genre.id}/>})*/}
-            {/*}*/}
+
+                GenresList
+            {
+
+                // genres.map((value)=> <GenreInfo genre={value}/>)
+            }
          </div>
     );
 };

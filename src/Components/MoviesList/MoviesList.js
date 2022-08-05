@@ -1,11 +1,7 @@
-// todo містить перелік(список) усіх фільмів
-// мапати(map) масив фільмів і запихати кожен в компоненту MoviesListCard
-
-
-
-import {useDispatch, useSelector} from "react-redux";
-import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 import {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+
+import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 import {movieActions} from "../../redux";
 
 import css from './MoviesList.module.css';
